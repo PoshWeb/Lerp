@@ -30,7 +30,7 @@ CompanyName = 'Start-Automating'
 Copyright = '2026'
 
 # Description of the functionality provided by this module
-# Description = ''
+Description = 'Linear Interpolation in PowerShell'
 
 # Minimum version of the PowerShell engine required by this module
 # PowerShellVersion = ''
