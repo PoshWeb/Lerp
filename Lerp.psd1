@@ -9,10 +9,10 @@
 @{
 
 # Script module or binary module file associated with this manifest.
-RootModule = '.\Lerp.psm1'
+RootModule = 'Lerp.psm1'
 
 # Version number of this module.
-ModuleVersion = '0.0.1'
+ModuleVersion = '0.1'
 
 # Supported PSEditions
 # CompatiblePSEditions = @()
@@ -72,13 +72,13 @@ Copyright = '2026'
 FunctionsToExport = 'Lerp', 'Get-Lerp'
 
 # Cmdlets to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no cmdlets to export.
-CmdletsToExport = '*'
+CmdletsToExport = @()
 
 # Variables to export from this module
-VariablesToExport = '*'
+VariablesToExport = @()
 
 # Aliases to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no aliases to export.
-AliasesToExport = '*'
+AliasesToExport = @()
 
 # DSC resources to export from this module
 # DscResourcesToExport = @()
@@ -98,16 +98,26 @@ PrivateData = @{
         # Tags = @()
 
         # A URL to the license for this module.
-        # LicenseUri = ''
+        LicenseUri = 'https://github.com/PoshWeb/Lerp/blob/main/LICENSE'
 
         # A URL to the main website for this project.
-        # ProjectUri = ''
+        ProjectUri = 'https://github.com/PoshWeb/Lerp'
 
         # A URL to an icon representing this module.
         # IconUri = ''
 
         # ReleaseNotes of this module
-        # ReleaseNotes = ''
+        ReleaseNotes = @'
+
+## Lerp 0.1
+
+* `Lerp` lerps (#1)
+* `Lerp.ps1` implements lerp (#2)
+* `Lerp.tests.ps1` check our math (#3)
+* `./github/workflows/BuildLerp.yml` builds, tests, and publishes lerp (#4)
+* `README.md.ps1` generates a readme (#5)
+
+'@
 
         # Prerelease string of this module
         # Prerelease = ''
@@ -117,6 +127,12 @@ PrivateData = @{
 
         # External dependent modules of this module
         # ExternalModuleDependencies = @()
+
+        PSIntro = '
+Lerp is a simple single command module for Linear Interpolation.
+
+It gives you a point between two other points.
+'
 
     } # End of PSData hashtable
 

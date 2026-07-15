@@ -2,6 +2,11 @@
 [![Lerp](https://img.shields.io/powershellgallery/dt/Lerp)](https://www.powershellgallery.com/packages/Lerp/)
 ## 
 
+Lerp is a simple single command module for Linear Interpolation.
+
+It gives you a point between two other points.
+
+
 ## Installing and Importing
 
 You can install Lerp from the [PowerShell gallery](https://powershellgallery.com/)
@@ -14,6 +19,15 @@ Once installed, you can import the module with:
 
 ~~~PowerShell
 Import-Module Lerp -PassThru
+~~~
+
+
+You can also clone the repo and import the module locally:
+
+~~~PowerShell
+git clone https://github.com/PoshWeb/Lerp
+cd ./Lerp
+Import-Module ./ -PassThru
 ~~~
 
 ## Functions
